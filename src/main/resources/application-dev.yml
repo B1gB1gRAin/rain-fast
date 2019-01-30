@@ -59,12 +59,12 @@ logging:
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/ifast-new2?useUnicode=true&useSSL=false
+    driverClassName: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ifast?useUnicode=true&useSSL=false&characterEncoding=utf-8&serverTimezone=UTC
     # 推荐utf8mb4编码以便支持表情字符，sys_log记录系统数据变动需要支持utf8mb4
     connectionInitSqls: SET NAMES utf8mb4;
     username: root
-    password: tiger
+    password: root
     initialSize: 1
     minIdle: 3
     maxActive: 20

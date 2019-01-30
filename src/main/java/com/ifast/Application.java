@@ -45,7 +45,7 @@ public class Application {
 		log.info("开启演示模式：{}", config.isDemoMode());
 		log.info("开启调试模式：{}", config.isDevMode());
 		log.info("数据库：{}", dataSourceProperties.getUrl());
-		log.info("==================> run at http://localhost:{}  <==================", serverProperties.getPort() + serverProperties.getContextPath());
+		log.info("==================> run at http://localhost:{}  <==================", serverProperties.getPort() + serverProperties.getServlet().getContextPath());
 	}
 	
 }
